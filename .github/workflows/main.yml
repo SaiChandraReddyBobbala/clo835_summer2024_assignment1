@@ -40,7 +40,7 @@ jobs:
     - name: Build and Push SQL image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: clo835-ecr
+        ECR_REPOSITORY: clo835-db
         IMAGE_TAG: latest-db
       run: |
         ls -ltra
